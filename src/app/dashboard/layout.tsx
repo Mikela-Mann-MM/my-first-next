@@ -1,4 +1,6 @@
-export default function DashboardLayout({ children }) {
+
+
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <nav>Dashboard Menu</nav> {/* Dette er layoutets menu */}

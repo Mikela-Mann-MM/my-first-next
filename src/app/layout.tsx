@@ -20,7 +20,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>{/* <-- BODY-tagget starter her */}
+        <header>header</header>
+        <main>
         {children} {/* <-- Her bliver children indsat */}
+        </main>
+        <footer>footer</footer>
       </body>
     </html>
   );

@@ -1,6 +1,12 @@
-export default async function Profile({ params }) {
+interface ProfilePageProps {
+  params: {
+    username: string;
+  };
+} 
+
+export default async function Profile({ params }: ProfilePageProps) {
   return (
-    <h1>Profil for: {(await params).username}</h1>
+    <h1>Profil for: {(await params).username}</h1> // paranteses omkring await er nødvendige, da det skal afvikles først
   );
 }
 
