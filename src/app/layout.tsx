@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LINK from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>{/* <-- BODY-tagget starter her */}
-        <header>header</header>
+        <header>header
+          <nav>
+            <LINK href="/contact">contact</LINK>
+            <LINK href="/time">time</LINK>
+          </nav>
+        </header>
         <main>
         {children} {/* <-- Her bliver children indsat */}
         </main>

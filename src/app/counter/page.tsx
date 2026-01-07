@@ -1,4 +1,4 @@
-'use client'
+'use client' //adgang til browser funktionalitet
 
 import { useState } from 'react';
 
