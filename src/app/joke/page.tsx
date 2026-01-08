@@ -6,7 +6,7 @@
 } */
 
 
-  import { getJoke } from "../services/jokes";
+  import { getJoke } from "../_services/jokes";
 
   export default async function JokePage() {
     const data = await getJoke();
